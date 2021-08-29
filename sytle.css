@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img2.gif);
+}
+.jav h1{
+    font-size: 20px;
+    color:rgb(19, 235, 12) ;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 600;
+    padding:20px 20px;
+    background-color:red;
+  }
+  .heart{
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    animation: heart 1s infinite;
+  }
+  @keyframes heart {
+    96%{
+      transform: translate(-50%,-50%) scale(2,2);
+    }
+    100%{
+      transform: translate(-50%,-50%) scale(1,1);
+    }
+  }
+  .heart div{
+    height:126px;
+    width: 71px;
+    top: 40%;
+    display: block;
+    position:absolute;
+    background: red;
+    border-radius: 50%;
+   
+  }
+  .left{
+    left: 45px;
+    transform:rotate(330deg)
+  }
+  .right{
+    right: 45px;
+    transform:rotate(30deg);
+  }
